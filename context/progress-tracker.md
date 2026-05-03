@@ -4,7 +4,7 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Phase
 
-- Feature 02: Next (TBD — add feature spec)
+- Feature 03: Next (TBD — add feature spec)
 
 ## Current Goal
 
@@ -13,6 +13,7 @@ Update this file whenever the current phase, active feature, or implementation s
 ## Completed
 
 - `01-design-system`: All 7 shadcn/ui primitive components generated (Button, Card, Dialog, Input, Tabs, Textarea, ScrollArea). `lib/utils.ts` with `cn()` created. `lucide-react` installed. Ghost AI custom design tokens (`--bg-base`, `--accent-primary`, `--accent-ai`, etc.) added to `globals.css` and mapped to Tailwind via `@theme inline`. Dark mode forced on `<html>` via `class="dark"`.
+- `02-editor`: `components/editor/editor-navbar.tsx` and `components/editor/project-sidebar.tsx` implemented. TypeScript clean.
 
 ## In Progress
 
@@ -20,7 +21,7 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Next Up
 
-- Add the next feature spec to `context/feature-specs/` and begin implementation.
+- Add Feature 03 spec to `context/feature-specs/` and begin implementation.
 
 ## Open Questions
 
@@ -35,3 +36,4 @@ Update this file whenever the current phase, active feature, or implementation s
 ## Session Notes
 
 - Feature 01 complete. All shadcn components verified installed. `globals.css` now includes both shadcn theme tokens and Ghost AI custom design tokens. Dark mode is always active.
+- Feature 02 complete. `components/editor/editor-navbar.tsx` and `components/editor/project-sidebar.tsx` created. Navbar: fixed h-12 top bar, PanelLeftOpen/PanelLeftClose toggle, left/center/right sections, dark bg + bottom border. Sidebar: fixed overlay (z-40), slides from left via CSS translate, does not push content, Projects header + X close button, shadcn Tabs (My Projects / Shared) with empty placeholder states, full-width New Project button pinned to footer. TypeScript compile: clean (exit 0). Dialog pattern: shadcn Dialog primitive already installed — no additional dialogs built.
